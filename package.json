@@ -1,0 +1,23 @@
+{
+  "name": "purgatories",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterPalVanyo/purgatories.git"
+  },
+  "author": "peterpal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterPalVanyo/purgatories/issues"
+  },
+  "homepage": "https://github.com/peterPalVanyo/purgatories#readme",
+  "dependencies": {
+    "ejs": "^2.7.4",
+    "express": "^4.17.1"
+  }
+}
