@@ -1,8 +1,33 @@
 <% include partials/header %>
-<h1>This is from hells</h1>
-<% hells.forEach((hell) => { %>
-<div>
-  <h4><%= hell.name %></h4>
-  <img src="<%= hell.image %>" />
+
+<div class="container">
+  <header class="jumbotron">
+    <div class="container">
+      <h1>Welcome to Dante's Word</h1>
+      <p>collection of purgatories from all over the Word</p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="/hells/new">Add New Hell</a>
+      </p>
+    </div>
+  </header>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Best from Hells</h3>
+    </div>
+  </div>
+
+  <div class="row text-center" style="display: flex; flex-wrap: wrap">
+    <% hells.forEach((hell) => { %>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail">
+        <img src="<%= hell.image %>" />
+        <div class="caption">
+          <h4><%= hell.name %></h4>
+        </div>
+      </div>
+    </div>
+
+    <% }) %> <% include partials/footer %>
+  </div>
 </div>
-<% }) %> <% include partials/footer %>
